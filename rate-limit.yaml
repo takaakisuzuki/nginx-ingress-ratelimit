@@ -1,0 +1,9 @@
+apiVersion: k8s.nginx.org/v1
+kind: Policy
+metadata:
+  name: rate-limit-policy
+spec:
+  rateLimit:
+    rate: 1r/s
+    key: ${http_X_Forwarded_for}
+    zoneSize: 10M
