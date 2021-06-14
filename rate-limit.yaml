@@ -7,3 +7,4 @@ spec:
     rate: 1r/s
     key: ${http_X_Forwarded_for}
     zoneSize: 10M
+    rejectCode: 429
